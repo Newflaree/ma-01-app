@@ -18,7 +18,7 @@ export class SidebarService {
         icon: 'fa fa-home'
       },
       {
-        title: 'Practica',
+        title: 'Practicar',
         url: 'categories',
         icon: 'fas fa-pencil-alt'
       },
@@ -33,7 +33,7 @@ export class SidebarService {
         icon: 'fas fa-cog'
       },
       {
-        title: 'Cerrar Sesion',
+        title: 'Cerrar Sesión',
         url: '/login',
         icon: 'fas fa-sign-out-alt'
       }
