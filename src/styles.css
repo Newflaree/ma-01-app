@@ -1,5 +1,5 @@
 /*Font Awesome Free Icon*/
-@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: #f2f2fc;
+  background-color: var( --main-light );
   margin: 0px;
   line-height: 1.5;
   font-size: 16px;
@@ -31,7 +31,6 @@ input, textarea, select {
 }
 
 .section {
-  background-color: #f2f2fc;
   margin-left: 5%;
   padding-right: 5%;
   min-height: 100vh; 
@@ -89,41 +88,6 @@ input, textarea, select {
   padding-top: 60px;
   padding-bottom: 70px;
 }
-
-.section-title {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 60px;
-}
-
-.section-title h2 {
-  font-size: 40px;
-  color: #2f2e4d;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-  margin: 0px;
-  position: relative;
-}
-
-.section-title h2::before {
-  content: '';
-  height: 4px;
-  width: 50px;
-  position: absolute;
-  top: 100%;
-  left: 0px;
-} 
-
-.section-title h2::after {
-  content: '';
-  height: 4px;
-  width: 25px;
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  margin-top: 8px;
-} 
 
 .row {
   display: -ms-flexbox;
