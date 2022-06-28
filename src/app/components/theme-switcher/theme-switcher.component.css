@@ -1,0 +1,29 @@
+.theme-switcher h5 {
+  font-size: 16px;
+  color: #302e4d;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e8dfec;
+}
+
+.theme-switcher ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.theme-switcher ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.theme-switcher ul li a {
+  height: 40px;
+  width: 40px;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+}
