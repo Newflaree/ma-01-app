@@ -3,22 +3,36 @@
 
   <!-- Logo -->
   <div class='logo'>
-    <a href='#home'>Newflare</a>
+    <a 
+      (click)="showNav()"
+      routerLink="/home"
+    >
+      MA - 01
+    </a>
   </div>
   <!-- Logo -->
 
   <!-- Nav Toggle Btn -->
-  <div class='nav-toggler'>
+  <div
+    class='nav-toggler'
+    (click)="showNav()"
+  >
     <span></span>
   </div>
   <!-- Nav Toggle Btn -->
 
   <!-- Navbar -->
   <ul class='nav'>
-    <li><a href='#home' class='active'><i class='fa fa-home'></i> Inicio</a></li>
-    <li><a href='#about'><i class='fas fa-pencil-alt'></i> Practicar</a></li>
-    <li><a href='#service'><i class='fas fa-user'></i> Mi Perfíl</a></li>
-    <li><a href='#portfolio'><i class='fas fa-cog'></i> Ajustes</a></li>
+    <li *ngFor=" let item of sidebarService.menu">
+      <a 
+        [routerLink]="item.url"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="showNav()"
+      >
+      <i [class]='item.icon'></i> {{ item.title }}
+      </a>
+    </li>
   </ul>
   <!-- Navbar -->
 
