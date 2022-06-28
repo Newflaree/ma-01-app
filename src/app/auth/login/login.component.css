@@ -124,6 +124,9 @@
   font-weight: 500;
   margin-top: 10px;
   text-align: center;
+}
+
+.register-btn a {
   color: var( --main-color );
 }
 

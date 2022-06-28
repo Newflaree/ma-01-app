@@ -32,6 +32,11 @@ export class SidebarService {
         url: 'settings',
         icon: 'fas fa-cog'
       },
+      {
+        title: 'Cerrar Sesion',
+        url: '/login',
+        icon: 'fas fa-sign-out-alt'
+      }
     ];
   }
 }
